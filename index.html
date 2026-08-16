@@ -12,22 +12,22 @@
 
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f8fafc;
             color: #111827;
+            background: #f8fafc;
             line-height: 1.6;
         }
 
         header {
-            background: #ffffff;
+            background: white;
             border-bottom: 1px solid #e5e7eb;
-            padding: 20px 7%;
+            padding: 20px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -35,8 +35,7 @@
 
         .logo {
             font-size: 24px;
-            font-weight: 700;
-            color: #111827;
+            font-weight: bold;
         }
 
         .logo span {
@@ -44,8 +43,8 @@
         }
 
         nav a {
-            text-decoration: none;
             color: #374151;
+            text-decoration: none;
             margin-left: 25px;
             font-size: 15px;
         }
@@ -55,13 +54,14 @@
         }
 
         .hero {
-            padding: 100px 7%;
+            padding: 100px 20px;
             text-align: center;
             background: linear-gradient(135deg, #eff6ff, #ffffff);
         }
 
         .hero h1 {
             font-size: 52px;
+            line-height: 1.15;
             margin-bottom: 20px;
         }
 
@@ -70,52 +70,51 @@
         }
 
         .hero p {
-            max-width: 650px;
+            max-width: 680px;
             margin: auto;
-            font-size: 19px;
             color: #4b5563;
+            font-size: 19px;
         }
 
         .section {
-            padding: 80px 7%;
-            max-width: 1100px;
+            max-width: 1050px;
             margin: auto;
+            padding: 80px 20px;
         }
 
         .section h2 {
             text-align: center;
             font-size: 34px;
-            margin-bottom: 45px;
+            margin-bottom: 40px;
         }
 
         .about {
-            text-align: center;
             max-width: 750px;
             margin: auto;
+            text-align: center;
             color: #4b5563;
             font-size: 17px;
         }
 
         .app-card {
+            max-width: 750px;
+            margin: auto;
             background: white;
             border: 1px solid #e5e7eb;
             border-radius: 18px;
             padding: 35px;
-            max-width: 750px;
-            margin: auto;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
 
         .app-icon {
-            width: 75px;
-            height: 75px;
-            border-radius: 18px;
+            width: 70px;
+            height: 70px;
             background: #2563eb;
-            color: white;
+            border-radius: 16px;
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 35px;
+            align-items: center;
+            font-size: 32px;
             margin-bottom: 20px;
         }
 
@@ -126,7 +125,7 @@
 
         .app-card p {
             color: #4b5563;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .features {
@@ -143,37 +142,31 @@
             display: inline-block;
             background: #2563eb;
             color: white;
-            text-decoration: none;
             padding: 12px 22px;
             border-radius: 8px;
-            font-weight: 600;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         .button:hover {
             background: #1d4ed8;
         }
 
-        .links {
+        .contact {
             text-align: center;
-        }
-
-        .links a {
-            color: #2563eb;
-            text-decoration: none;
-            margin: 0 15px;
+            color: #4b5563;
         }
 
         footer {
             background: #111827;
             color: #d1d5db;
             text-align: center;
-            padding: 30px;
-            margin-top: 40px;
+            padding: 30px 20px;
         }
 
-        footer p {
-            margin: 5px;
-            font-size: 14px;
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
         }
 
         @media (max-width: 700px) {
@@ -187,20 +180,8 @@
                 margin: 0 8px;
             }
 
-            .hero {
-                padding: 70px 6%;
-            }
-
             .hero h1 {
                 font-size: 38px;
-            }
-
-            .hero p {
-                font-size: 17px;
-            }
-
-            .section {
-                padding: 60px 6%;
             }
         }
     </style>
@@ -209,6 +190,7 @@
 <body>
 
 <header>
+
     <div class="logo">
         LogicLabs<span>.</span>
     </div>
@@ -217,8 +199,9 @@
         <a href="#about">About</a>
         <a href="#apps">Apps</a>
         <a href="privacy.html">Privacy</a>
-        <a href="#contact">Contact</a>
+        <a href="support.html">Support</a>
     </nav>
+
 </header>
 
 
@@ -244,15 +227,15 @@
     <div class="about">
 
         <p>
-            LogicLabs Technologies is focused on building
-            lightweight, useful and easy-to-use mobile applications.
+            LogicLabs Technologies develops lightweight,
+            useful and easy-to-use mobile applications.
         </p>
 
         <br>
 
         <p>
-            We create utility apps that solve everyday problems
-            with simple and intuitive experiences.
+            Our goal is to solve everyday problems through
+            simple and practical technology.
         </p>
 
     </div>
@@ -273,27 +256,24 @@
         <h3>Find My Car</h3>
 
         <p>
-            Never forget where you parked your car.
+            Never forget where you parked your vehicle.
         </p>
 
         <p>
-            Find My Car helps you save your vehicle's parking
-            location so you can easily find it when you return.
+            Find My Car lets you save your parking location
+            and easily view it when you return to your vehicle.
         </p>
 
         <ul class="features">
 
-            <li>Save your current parking location</li>
-
-            <li>View your saved parking location</li>
-
-            <li>Open the location on a map</li>
-
+            <li>Save your parking location</li>
+            <li>View your saved location</li>
+            <li>Open your location on a map</li>
             <li>Simple and easy-to-use interface</li>
 
         </ul>
 
-        <!-- Add your Google Play link here later -->
+        <!-- Add your Play Store URL here after publishing -->
         <a class="button" href="#">
             Google Play
         </a>
@@ -303,26 +283,21 @@
 </section>
 
 
-<section class="section" id="contact">
+<section class="section">
 
-    <h2>Contact</h2>
+    <h2>Support</h2>
 
-    <div class="links">
+    <div class="contact">
 
         <p>
-            For app support and enquiries, please contact us
-            through our support email.
+            Need help with one of our applications?
         </p>
 
         <br>
 
-        <!-- Replace this with your real support email -->
-        <p>
-            Email:
-            <a href="mailto:YOUR_EMAIL@example.com">
-                YOUR_EMAIL@example.com
-            </a>
-        </p>
+        <a class="button" href="support.html">
+            Visit Support
+        </a>
 
     </div>
 
@@ -335,10 +310,12 @@
         © 2026 LogicLabs Technologies. All rights reserved.
     </p>
 
+    <br>
+
     <p>
-        <a href="privacy.html" style="color:#93c5fd;">
-            Privacy Policy
-        </a>
+        <a href="privacy.html">Privacy Policy</a>
+        &nbsp; | &nbsp;
+        <a href="support.html">Support</a>
     </p>
 
 </footer>
