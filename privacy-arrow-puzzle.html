@@ -3,211 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Arrow Puzzle: Tap Away</title>
+    <title>Privacy Policy - Arrow Escape</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
-
-        :root {
-            --bg-main: #f3f4f6;
-            --bg-card: #ffffff;
-            --text-main: #1f2937;
-            --text-muted: #6b7280;
-            --accent: #3b82f6;
-            --accent-hover: #2563eb;
-            --border: #e5e7eb;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-main: #111827;
-                --bg-card: #1f2937;
-                --text-main: #f9fafb;
-                --text-muted: #9ca3af;
-                --accent: #60a5fa;
-                --accent-hover: #93c5fd;
-                --border: #374151;
-            }
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--bg-main);
-            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .container {
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
         }
-
-        .header {
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
             text-align: center;
-            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
-
-        .header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, var(--accent), #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
         }
-
-        .header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-        }
-
-        .card {
-            background-color: var(--bg-card);
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-            border: 1px solid var(--border);
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 16px;
-            color: var(--text-main);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 8px;
-        }
-
-        .section-title:first-of-type {
-            margin-top: 0;
-        }
-
         p {
-            margin-bottom: 16px;
-            color: var(--text-muted);
-            font-weight: 400;
+            margin-bottom: 15px;
         }
-
-        strong {
-            color: var(--text-main);
-            font-weight: 600;
-        }
-
         ul {
-            margin-bottom: 16px;
-            padding-left: 24px;
-            color: var(--text-muted);
+            margin-bottom: 15px;
         }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        .highlight-banner {
-            background-color: rgba(59, 130, 246, 0.1);
-            border-left: 4px solid var(--accent);
-            padding: 16px 24px;
-            border-radius: 0 12px 12px 0;
-            margin-bottom: 32px;
-        }
-
-        .highlight-banner p {
-            margin: 0;
-            color: var(--text-main);
-            font-weight: 500;
-        }
-
         .footer {
-            text-align: center;
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 640px) {
-            .card {
-                padding: 24px;
-                border-radius: 12px;
-            }
-            .header h1 {
-                font-size: 2rem;
-            }
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Privacy Policy</h1>
-            <p><strong>Arrow Puzzle: Tap Away</strong></p>
-            <p id="date-display">Effective Date: September 15, 2026</p>
-        </div>
+        <h1>Privacy Policy for Arrow Escape</h1>
+        <p><strong>Effective Date:</strong> <span id="date"></span></p>
 
-        <div class="card">
-            <div class="highlight-banner">
-                <p><strong>Summary:</strong> Arrow Puzzle: Tap Away uses third-party advertising services to support development. While your game progress is stored locally, these ad networks may collect device identifiers and usage data to serve relevant ads.</p>
-            </div>
+        <p>Logic Labs ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you play our mobile application, Arrow Escape (the "App").</p>
 
-            <h2 class="section-title">1. Introduction</h2>
-            <p>Welcome to <strong>Arrow Puzzle: Tap Away</strong>. This Privacy Policy is designed to transparently inform you about our data practices when you use our mobile application. We have built this game with privacy in mind, fully adhering to the requirements of global privacy regulations and Google Play Store policies.</p>
+        <h2>1. Information We Collect</h2>
+        <p>When you use the App, we may collect certain information automatically, including:</p>
+        <ul>
+            <li><strong>Device Information:</strong> Such as your mobile device ID, model, manufacturer, operating system, and version information.</li>
+            <li><strong>Usage Data:</strong> Information about how you interact with the App, including session length, levels completed, and interactions with in-game features.</li>
+        </ul>
+        <p><em>Note: Arrow Escape does not require you to create an account, and we do not collect personally identifiable information (PII) such as your name, email, or phone number.</em></p>
 
-            <h2 class="section-title">2. Information Collection and Use</h2>
-            <p><strong>Local Game Data:</strong> Your core gameplay progress, unlocked levels, and high scores are stored exclusively within your device's local secure storage and are not transmitted to our servers.</p>
-            <p><strong>Advertising Data:</strong> To keep our game free to play, we use third-party advertising networks. These networks may collect certain information automatically when you play the game, including your IP address, device type, operating system, and unique Advertising Identifiers.</p>
+        <h2>2. Third-Party Advertisements (Unity Ads)</h2>
+        <p>To keep the App free to play, we use <strong>Unity Ads</strong> to serve advertisements. Unity Ads may collect and process certain data to provide personalized and non-personalized ads, monitor ad performance, and prevent fraud.</p>
+        <p>Data collected by Unity Ads may include:</p>
+        <ul>
+            <li>IP address</li>
+            <li>Device identifiers (such as Google Advertising ID or Apple IDFA)</li>
+            <li>In-game location and actions (to measure ad viewability)</li>
+        </ul>
+        <p>For more information on how Unity collects and processes your data, please review the <a href="https://unity3d.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a>.</p>
 
-            <h2 class="section-title">3. Third-Party Services and Advertising</h2>
-            <p>We integrate third-party SDKs to display advertisements. These companies may use cookies, device identifiers, and similar technologies to collect information about your device and your interactions with the game in order to provide targeted advertisements and analyze ad performance.</p>
-            <p>For more information on how these ad networks collect and use your data, please review their respective privacy policies:</p>
-            <ul>
-                <li><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">AppLovin Privacy Policy</a></li>
-            </ul>
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected information primarily to:</p>
+        <ul>
+            <li>Provide, maintain, and improve the App's functionality and performance.</li>
+            <li>Serve relevant advertisements through our third-party ad networks.</li>
+            <li>Analyze usage trends to enhance the user experience.</li>
+        </ul>
 
-            <h2 class="section-title">4. Device Permissions</h2>
-            <p>To function properly and load advertisements, our app requests the <strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong> permissions. We do not ask for access to your camera, microphone, precise location, contacts, or external storage files beyond what is strictly necessary to save your game state locally.</p>
+        <h2>4. Data Retention</h2>
+        <p>We retain usage data only for as long as is necessary for the purposes set out in this Privacy Policy. Data collected by third-party services (like Unity) is subject to their respective data retention policies.</p>
 
-            <h2 class="section-title">5. Data Security</h2>
-            <p>Your local game data is protected by the inherent security sandboxing features of the Android operating system. Data collected by our third-party advertising partners is governed by their own stringent security and privacy practices. While we strive to partner with reputable networks, we cannot guarantee the absolute security of data transmitted over the internet.</p>
+        <h2>5. Children's Privacy</h2>
+        <p>Arrow Escape does not knowingly collect personally identifiable information from children under the age of 13. If you are a parent or guardian and believe your child has provided us with personal data, please contact us. We will take steps to remove such information from our servers immediately.</p>
 
-            <h2 class="section-title">6. Children's Privacy</h2>
-            <p>We do not knowingly collect personal information from children under 13. However, third-party ad networks used in our app may collect device identifiers to serve non-personalized contextual ads to younger audiences. If you are a parent or guardian and believe your child has provided personal information outside of these parameters, please contact us.</p>
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Effective Date" at the top of this policy. You are advised to review this Privacy Policy periodically for any changes.</p>
 
-            <h2 class="section-title">7. Changes to This Privacy Policy</h2>
-            <p>We reserve the right to update this Privacy Policy if our practices change (for example, if we introduce new features in the future). Any changes will be reflected directly on this page, and the "Effective Date" at the top will be updated. We encourage you to review this policy periodically.</p>
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@logiclabs.com">support@logiclabs.com</a> (Please update this!)</p>
 
-            <h2 class="section-title">8. Contact Us</h2>
-            <p>If you have any questions, concerns, or suggestions regarding our Privacy Policy, please feel free to contact us at:</p>
-            <ul>
-                <li><strong>Email:</strong> logiclabs.support@gmail.com</li>
-            </ul>
-        </div>
-        
         <div class="footer">
-            <p>&copy; 2026 Logic Labs. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Logic Labs. All rights reserved.</p>
         </div>
     </div>
+
+    <script>
+        // Set current date and year automatically
+        const today = new Date();
+        document.getElementById('date').innerText = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('year').innerText = today.getFullYear();
+    </script>
 </body>
 </html>
